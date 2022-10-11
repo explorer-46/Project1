@@ -6,16 +6,19 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AirlinesComponent } from './airlines/airlines.component';
 import { RouterModule, Routes } from '@angular/router';
+import { PassengerComponent } from './passenger/passenger.component';
 
 const link:Routes=[
-  {path:"",component:AirlinesComponent}
+  {path:"",component:AirlinesComponent},
+  {path:"view",component:PassengerComponent}
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AirlinesComponent
+    AirlinesComponent,
+    PassengerComponent
   ],
   imports: [
     BrowserModule,
